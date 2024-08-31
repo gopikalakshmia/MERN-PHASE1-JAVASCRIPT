@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Form validation</title>
+</head>
+<body>
+    <h2>Login form</h2>
+    <form method="post" onsubmit="validation()">
+        <input type="text" id="user" placeholder="username"><br>
+        <input type="password" id="pwd" placeholder="password"><br>
+        <input type="submit" value="submit" id="sub">
+    </form>
+    <script>
+function validation(){
+    var un=document.getElementById('user').value;
+    var pwd=document.getElementById('pwd').value;
+    if(un =="student" && pwd=="password"){
+        window.alert("User details are correct")
+    }
+    else{
+        window.alert("user details are not correct")
+    }
+}
+    </script>
+</body>
+</html>
